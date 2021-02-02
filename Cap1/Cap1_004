@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="ca-ES">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Hola</title>
+</head>
+<body>
+    <p>Benvingut a JavaScript</p>
+    <script>
+        alert('Hola món!');
+    </script>  
