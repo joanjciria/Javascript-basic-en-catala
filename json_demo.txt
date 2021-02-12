@@ -1,9 +1,9 @@
 {
-    "nom":"Joan",
-    "edat":31,
-    "mascotes":[
-        { "animal":"gos", "name":"Tommy" },
-        { "animal":"gat", "name":"Gru" },
-        { "animal":"hamster", "name":"Raig" }
+    "name":"John",
+    "age":31,
+    "pets":[
+        { "animal":"dog", "name":"Fido" },
+        { "animal":"cat", "name":"Felix" },
+        { "animal":"hamster", "name":"Lightning" }
     ]
 }
