@@ -4,6 +4,6 @@
     "mascotes":[
         { "animal":"gos", "nom":"Fido" },
         { "animal":"gat", "nom":"Gru" },
-        { "animal":"hamster", "name":"Raig" }
+        { "animal":"hamster", "nom":"Raig" }
     ]
 }
