@@ -1,5 +1,5 @@
 {
-    "name":"Joan",
+    "nom":"Joan J",
     "edat":31,
     "mascotes":[
         { "animal":"gos", "nom":"Fido" },
