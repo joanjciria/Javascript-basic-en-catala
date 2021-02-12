@@ -1,0 +1,9 @@
+{
+    "nom":"Joan",
+    "edat":31,
+    "mascotes":[
+        { "animal":"gos", "name":"Tommy" },
+        { "animal":"gat", "name":"Gru" },
+        { "animal":"hamster", "name":"Raig" }
+    ]
+}
