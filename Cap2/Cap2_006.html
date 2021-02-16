@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ca-ES">
+<head>
+    <meta charset="utf-8">
+    <script>  
+        var myVar = "global";         // Declara una variable global
+        function comprovaambit( ) {
+               var myVar = "local";   // Declara una variable local
+               alert(myVar);
+        }
+    </script>  
+</head>
+<body>
+    <div>
+        <input onclick="comprovaambit()" type="submit" value="Clic"> </input>
+    </div>
+</body>
+</html>
