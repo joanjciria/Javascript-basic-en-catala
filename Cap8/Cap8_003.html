@@ -1,0 +1,16 @@
+<script>
+  // reescriptura de la classe Usuari en funcions pures
+  // 1. Crear una funció constructora
+  function Usuari(nom) {
+    this.nom = nom;
+  }
+  // un prototip de funció té la propietat "constructor" per defecte,
+  // per tant, no cal que el creem
+  // 2. Afegir el mètode al prototip
+  Usuari.prototype.diHola = function () {
+    alert("Hola " + this.nom);
+  };
+  // Ús:
+  let usuari1 = new Usuari("Joan");
+  usuari1.diHola ();
+</script>
