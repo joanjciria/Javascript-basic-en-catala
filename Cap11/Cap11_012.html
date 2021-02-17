@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<script>
+  function content() {
+    document.getElementById('myimage').src = "smiley_content.png";
+  }
+  function trist() {
+    document.getElementById('myimage').src = "smiley_trist.png";
+  }
+</script>
+</head>
+<body>
+  <img id="myimage" onmousedown="content()" onmouseup="trist()" src="smiley_trist.png"
+   width="150" height="150" />
+   <p>Feu clic amb el ratolí i manteniu premut!</p>
+</body>
+</html>
