@@ -1,0 +1,14 @@
+<script>
+    var text = "";
+    var persona = {
+      nom: "Joan",
+      cognom: "Ciria",
+      edat: 50,
+    };
+    delete persona.edat;
+    var x;
+    for (x in persona) {
+        text +=  x + " : "  + persona[x] +  "\n";
+    }
+    alert(text);
+</script>
