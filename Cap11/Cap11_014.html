@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+    <p>Aquest exemple utilitza el mètode addEventListener() per adjuntar un esdeveniment de clic a un botó.</p>
+    <button id="myBtn">Prova-ho</button>
+    <p id="demo"></p>
+  <script>
+    document.getElementById("myBtn").addEventListener("click", mostraData);
+    function mostraData() {
+      document.getElementById("demo").innerHTML = Date();
+    }
+  </script>
+</body>
+</html>
