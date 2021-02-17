@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script>
+    function myFunction() {
+      var x = document.getElementById("nom");
+      x.value = x.value.toUpperCase();
+    }
+  </script>
+</head>
+<body>
+    El teu nom: <input type="text" id="nom" onchange="myFunction()">
+    <p>Quan sortiu del camp d'entrada, s'activa una funció que transforma el text
+      d'entrada en majúscules.</p>
+</body>
+</html>
