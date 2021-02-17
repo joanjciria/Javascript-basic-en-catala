@@ -1,0 +1,19 @@
+<script>
+  var text = "";
+  class Cotxe {
+    constructor(brand) {
+      this._nomCotxe = brand;
+    }
+    set nomCotxe(x) {
+      this._nomCotxe = x;
+    }
+    get nomCotxe() {
+      return this._nomCotxe;
+    }
+  }
+  let Cotxe1 = new Cotxe("Ferrari");
+  text = Cotxe1.nomCotxe + "\n";
+  Cotxe1.nomCotxe = "Maserati";
+  text += Cotxe1.nomCotxe;
+  alert(text);
+</script>
