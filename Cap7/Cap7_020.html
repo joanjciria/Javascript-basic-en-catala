@@ -1,0 +1,14 @@
+<script>
+    function Persona(nom, cognom, edat) {
+      this.nom = nom;
+      this.cognom = cognom;
+      this.edat = edat;
+      this.nomComplet = function() {return this.nom + " " + this.cognom;};
+      this.canviaEdat = function (num) {
+             this.edat = num;
+             };
+      }
+    var Pare = new Persona("Antoni", "Llompart", 75);
+    Pare.canviaEdat(76);
+    alert("Demà és l'aniversari del Pare, cumplirà " + Pare.edat + " anys."); 
+</script>
