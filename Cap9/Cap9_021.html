@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div id="div1">
+    <p id="p1">Això és un paràgraf.</p>
+    <p id="p2">Això és un altre paràgraf.</p>
+  </div>
+  <script>
+    var para = document.createElement("p"); // Crea l'elemnt p
+    var node = document.createTextNode("Això és un paràgraf nou.");    // Crea el node de text
+    para.appendChild(node);                                            // Afegeix el node de text al nou element p
+    var element = document.getElementById("div1");                     //Assigna el div existent a una variable
+    var fill = document.getElementById("p1");                          // Assigna el paràgraf p1 existenta una variable
+    element.insertBefore(para,fill);                                   // Afegeix el nou paràgraf abans del paràgraf p1
+  </script>
+</body>
+</html>
