@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p id="demo"></p>
+  <input type="button" value="Prova-ho" onclick="navActual()">
+ <script>
+    function navActual(){
+      document.getElementById("demo").innerHTML =
+      "Nom de l'aplicació del navegador: <b>" + navigator.appName + "</b>" +
+      "<br>Codi de l'aplicació del navegador: <b>" + navigator.appCodeName + "</b>" +
+      "<br>Producte del navegador: <b>" + navigator.product + "</b>" +
+      "<br>Versió del navegador: <b>" + navigator.appVersion + "</b>" +
+      "<br>Capçalera agent-usuari: <b>" + navigator.userAgent + "</b>" +
+      "<br>Plataforma del navegador: <b>" + navigator.platform + "</b>" +
+      "<br>Idioma del navegador: <b>" + navigator.language + "</b>" +
+      "<br>Navegador en línia: <b>" + navigator.onLine + "</b>" +
+      "<br>Java habilitat: <b>" + navigator.javaEnabled() + "</b>" +
+      "<br>Cookies habilitades: <b>" + navigator.cookieEnabled + "</b>";
+    }
+  </script>
+</body>
+</html>
