@@ -1,0 +1,21 @@
+<script>
+  class Cotxe {
+    constructor(marca) {
+    this.nomCotxe = marca;
+  }
+  presentar() {
+    return 'Tinc un ' + this.nomCotxe;
+    }
+  }
+  class Model extends Cotxe {
+    constructor(marca, mod) {
+      super(marca);
+      this.model = mod;
+  }
+  mostrar() {
+    return this.presentar() + ', és un ' + this.model;
+    }
+  }
+  let Cotxe1 = new Model("Audi", "A4");
+  alert(Cotxe1.mostrar());
+</script>  
