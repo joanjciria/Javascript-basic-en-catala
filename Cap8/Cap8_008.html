@@ -1,0 +1,13 @@
+<script>
+  function ferunaClasse(frase) {
+    // declara una classe i la retorna
+    return class {
+      diHola() {
+        alert(frase);
+      }
+    };
+  }
+  // Crea una nova classe
+  let Saluda = ferunaClasse("Hola");
+  new Saluda().diHola(); // Hola
+</script>
