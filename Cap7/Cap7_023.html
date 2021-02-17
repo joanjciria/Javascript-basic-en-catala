@@ -1,0 +1,12 @@
+<script>
+    function Persona(nom, cognom, edat) {
+      this.nom = nom;
+      this.cognom = cognom;
+      this.edat = edat;
+      }
+          Persona.prototype.nomComplet = function() {
+            return this.nom + " " + this.cognom;
+      }
+    var elPare = new Persona("Antoni", "Llompart", 75);
+    alert("El meu pare es diu " + elPare.nomComplet()); 
+</script>
