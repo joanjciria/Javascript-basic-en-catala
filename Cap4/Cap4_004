@@ -1,0 +1,8 @@
+<script>
+  var edat = 16;
+  if( edat > 18 ) {
+      alert("Tens edat per votar");
+      }else{
+          alert("No tens edat per votar");    
+      }
+</script>
