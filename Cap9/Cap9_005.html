@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p>Hola Món!</p>
+  <p class="intro">El DOM és molt útil.</p>
+  <p class="intro">Aquest exemple demostra el mètode <b>getElementsByClassName</b>.</p>
+  <p id="demo"></p>
+    <script>
+      var x = document.getElementsByClassName("intro");
+      document.getElementById("demo").innerHTML = 
+      'El primer paràgraf (index 0) amb class="intro": ' + x[0].innerHTML;
+  </script>
+</body>
+</html>
