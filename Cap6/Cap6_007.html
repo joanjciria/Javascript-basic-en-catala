@@ -1,0 +1,22 @@
+<script>
+
+  var text = "";
+
+    function mostraNombresPrimers(n) {
+      for (let i = 2; i < n; i++) {
+          if (!esPrimer(i)) continue;
+          text += i + "\n" ; 
+        }
+        alert(text); 
+      }
+
+    function esPrimer(n) {
+      for (let i = 2; i < n; i++) {
+        if ( n % i == 0) return false;
+      }
+      return true;
+   }
+
+   mostraNombresPrimers(15)
+
+ </script>
