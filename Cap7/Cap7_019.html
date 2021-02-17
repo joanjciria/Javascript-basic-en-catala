@@ -1,0 +1,12 @@
+<script>
+    function Persona(nom, cognom, edat) {
+      this.nom = nom;
+      this.cognom = cognom;
+      this.edat = edat;
+      this.nomComplet = function() {return this.nom + " " + this.cognom;};
+      }
+    var Pare = new Persona("Antoni", "Llompart", 75);
+    var Mare = new Persona("Mercè", "Rosselló", 71);
+    alert("El meu pare es diu " + Pare.nomComplet() +" i té " + Pare.edat + " anys.\n" + 
+          "La meva mare es diu " + Mare.nomComplet() +" i té " + Mare.edat + " anys."); 
+</script>
