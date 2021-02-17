@@ -1,0 +1,10 @@
+<script>
+  var dies = [ "Dilluns","Dimarts","Dimecres","Dijous","Divendres","Dissabte","Diumenge"];
+  var setmana= "" ;
+  list:
+    for (var i = 0; i < 7; i++) {
+        if (i == 3) break list;  // Surt del bucle exterior
+        setmana += dies[i] + "\n"; 
+    }
+alert(setmana);
+</script>
