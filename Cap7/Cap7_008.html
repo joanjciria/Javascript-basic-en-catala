@@ -1,0 +1,14 @@
+<script>
+  var persona = {
+    nom: "Joan",
+    cognom: "Ciria",
+    edat: 50,
+  };
+  persona.nacionalitat = "Català";
+  var x;
+  var text = "";
+  for (x in persona) {
+    text +=  x + " : "  + persona[x] +  "\n";
+  }
+  alert(text);
+</script>
