@@ -1,0 +1,15 @@
+<script>
+  class Cotxe {
+    constructor(marca) {
+    this._nomCotxe = marca;
+  }
+  get nomCotxe() {
+    return this._nomCotxe;
+  }
+  set nomCotxe(x) {
+    this.nomCotxe = x;
+   }
+  }
+  let Cotxe1 = new Cotxe("Ferrari");
+  alert(Cotxe1.nomCotxe);
+</script>
