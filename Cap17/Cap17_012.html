@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html> 
+<body>
+  <script type="module">
+    alert(typeof button); // objecte: l'script pot "veure" el botó següent
+    // a mesura que es posposen els mòduls, l'script s'executa després de carregar
+      tota la pàgina
+  </script>
+  <script>
+    alert(typeof button); // El botó no està definit, l'script no pot veure
+    elements a continuació
+    // Els scripts habituals s'executen immediatament abans que es processi
+       la resta de la pàgina
+  </script>
+  <button id="button">Button</button>
+</body>
+</html>
