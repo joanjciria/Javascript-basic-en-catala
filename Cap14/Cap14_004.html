@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p>Si us plau, entra un númeroentre 5 i 10</p>
+
+  <input id="demo" type="text">
+  <button type="button" onclick="myFunction()">Prova entrada</button>
+  <p id="p01"></p>
+  
+  <script>
+  function myFunction() {
+    var message, x;
+    message = document.getElementById("p01");
+    message.innerHTML = "";
+    x = document.getElementById("demo").value;
+    try { 
+      if(x == "")  throw "és buida";
+      if(isNaN(x)) throw "no és un nombre";
+      x = Number(x);
+      if(x < 5)  throw "és massa baixa";
+      if(x > 10)   throw "és massa alta";
+    }
+    catch(err) {
+      message.innerHTML = "L'entrada " + err;
+    }
+  }
+  </script>
+</body>
+</html>
