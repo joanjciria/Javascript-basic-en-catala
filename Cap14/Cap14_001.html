@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+   <script>
+    try {
+      document.getElementById("demo1").innerHTML =
+     ('Inici del codi try');  // (1) <--
+      // ...no hi ha errors aquí
+      document.getElementById("demo2").innerHTML =
+      ('Final del codi try');   // (2) <--
+      } catch(err) {
+      document.getElementById("demo3").innerHTML =
+      ('Catch és ignorat, perquè no hi ha errors errors'); // (3)
+      }
+   </script>
+</body>
+</html>
