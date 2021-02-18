@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p>Aquest document té un gestor d'esdeveniments click que mostra un número aleatori
+     cada vegada que moveu el ratolí en aquest document.</p>
+  <p>Feu clic al botó per eliminar el gestor d'esdeveniments.</p>
+  <button onclick="removeHandler()">Atura l'esdeveniment</button>
+  <p id="demo"></p>
+  <script>
+    document.addEventListener("click", clicFuncio);
+    function clicFuncio() {
+      document.getElementById("demo").innerHTML += Math.random() + "<br>";
+    }
+    function removeHandler() {
+      document.removeEventListener("click", clicFuncio);
+    }
+  </script>
+</body>
+</html>
