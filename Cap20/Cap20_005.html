@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Canvas</title>
+    <style>
+      
+        #llenç{
+        border:1px #f28340 solid;
+        }
+                                  
+    </style>
+    
+    <script>
+    
+    var y=50;
+    var estat="baixant";
+    var dalt=y;
+    var horitzontal=0;
+    
+    function animacio () {
+      
+      if (y<350 && estat=="baixant"){
+      
+        llenç.clearRect(0,0,800,350);
+        llenç.beginPath();
+        llenç.arc(300+horitzontal,y,25,Math.PI*2,false);
+        llenç.fill();
+        y+=25;
+        horitzontal+=3.5;
+      }
+      
+      if(y==325){
+        dalt+=25;
+        estat="pujant";
+      }
+      
+      if(y>=dalt && estat=="pujant"){
+        llenç.clearRect(0,0,800,350);
+        llenç.beginPath();
+        llenç.arc(300+horitzontal,y,25,Math.PI*2,false);
+        llenç.fill();
+        y-=25;
+        horitzontal+=3.5;
+      }
+      
+      if(y==dalt){
+        estat="baixant";
+      }
+    }
+
+    function començar () {
+      var element=document.getElementById("llenç");
+        llenç=element.getContext("2d");
+          setInterval(animacio,50); // son 50 milisegundos
+    }
+          
+      window.addEventListener("load",començar,false); 
+    </script>
+  
+  </head>
+
+  <body>
+    
+    <section id="dibuix">
+      <canvas id="llenç" width="800" height="350"></canvas>
+    </section>
+    
+    <section id="dibuix2">
+      <canvas id="llenç2" width="800" height="350"></canvas>
+    </section>
+    
+    <section id="dibuix3">
+      <canvas id="llenç3" width="800" height="350"></canvas>
+    </section>
+    
+    <section id="dibuix4">
+      <canvas id="llenç4" width="800" height="350"></canvas>
+    </section>
+    
+    <section id="dibuix5">
+      <canvas id="llenç5" width="800" height="350"></canvas>
+    </section>
+    
+    <section id="dibuix6">
+      <canvas id="llenç6" width="800" height="350"></canvas>
+    </section>
+    
+    <section id="dibuix7">
+      <canvas id="llenç7" width="800" height="350"></canvas>
+    </section>
+    
+    <section id="dibuix8">
+      <canvas id="llenç8" width="800" height="350"></canvas>
+    </section>
+    
+    <section id="dibuix9">
+      <canvas id="llenç9" width="800" height="350"></canvas>
+    </section>
+    
+    <section id="dibuix10">
+      <canvas id="llenç10" width="800" height="350"></canvas>
+    </section>
+    
+  </body>
+</html>
