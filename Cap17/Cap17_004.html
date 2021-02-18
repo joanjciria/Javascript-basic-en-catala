@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html> 
+<body>
+  <script type="module">
+    // La variable només és visible en aquest script del mòdul
+    let usuari = "Joan";
+  </script>
+  <script type="module">
+    alert(usuari); // Error: l'usuari no està definit
+  </script>
+</body>
+</html>
