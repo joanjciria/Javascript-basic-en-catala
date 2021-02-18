@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html> 
+<body>
+  <p id="demo"></p>
+  <script>
+      var myObj = { nom: "Joan", edat: 31, localitat: "Palma" };
+      var myJSON = JSON.stringify(myObj);
+      document.getElementById("demo").innerHTML =(typeof myJSON) + "<br>" + (myJSON); 
+  </script>
+</body>  
+</html>
