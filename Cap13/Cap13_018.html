@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p id="demo"></p>
+   <script>
+    let goodInput = "12:34";
+    let badInput = "12:345";
+    let regexp = /^\d\d:\d\d$/;
+    document.getElementById("demo").innerHTML =
+    ( regexp.test(goodInput)) + "<br>" + // true
+    ( regexp.test(badInput)); // false
+  </script>
+</body>
+</html>
