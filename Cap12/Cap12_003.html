@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <form id="formul">
+    <fieldset name="campsUsuari">
+      <legend>info</legend>
+      <input name="login" type="text">
+    </fieldset>
+  </form>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <p id="demo3"></p>
+  <script>
+    document.getElementById("demo1").innerHTML = (formul.elements.login); // HTMLInputElement
+    let fieldset = formul.elements.campsUsuari;
+    document.getElementById("demo2").innerHTML =(fieldset);              // HTMLFieldSetElement
+    // podem obtenir l’entrada per nom tant des del formulari com des del fieldset:
+    document.getElementById("demo3").innerHTML = (fieldset.elements.login == formul.elements.login); // true
+  </script>
+</body>
+</html>
