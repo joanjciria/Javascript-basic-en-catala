@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p>Entra un preu entre 100 i 3000.</p>
+  <input id="preu" type="number" min="100" max="3000" required>
+  <button onclick="validaInput()">OK</button>
+  <p id="missatge"></p>
+  <script>
+  function validaInput()
+   {
+      var inpObj = document.getElementById("preu");
+      missatge.innerHTML ="";
+      try{
+            if (!inpObj.checkValidity() == true) throw "Preu fora de rang.";
+      }catch(err){
+            missatge.innerHTML = err;
+          }
+   } 
+    </script>
+</body>
+</html>
