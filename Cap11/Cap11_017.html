@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p id="p1">Aquest exemple utilitza el mètode addEventListener() per afegir dos
+   esdeveniments de clic al mateix botó.</p>
+  <button id="myBtn">Prova-ho</button>
+  <script>
+    var x = document.getElementById("myBtn");
+    x.addEventListener("click", canviaMissatge);
+    x.addEventListener("click", canviaBodyColor);
+    function canviaMissatge() {
+      document.getElementById("p1").innerHTML = "Hem canviat el text i el color de
+      fons del document!";
+    }
+    function canviaBodyColor() {
+      document.body.style.background = "yellow";
+   }
+  </script>
+</body>
+</html>
