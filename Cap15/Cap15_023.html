@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html> 
+<body>  
+  <p id="demo"></p>
+  <script>
+    var avui, algundia, text;
+    avui = new Date();
+    algundia = new Date();
+    algundia.setFullYear(2100, 0, 14);
+    if (algundia > avui) {
+      text = "Avui és abans del 14 de gener de 2100.";
+    } else {
+      text = "Avui is després del 14 de gener de 2100.";
+    }
+    document.getElementById("demo").innerHTML = text;
+  </script>
+</body>  
+</html>
