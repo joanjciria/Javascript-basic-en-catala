@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+    function* generaSequencia(start, end) {
+      for (let i = start; i <= end; i++) yield i;
+    }
+    function* generaCodiContrasenya() {
+    // 0..9
+    yield* generaSequencia(48, 57);
+    // A..Z
+    yield* generaSequencia(65, 90);
+    // a..z
+    yield* generaSequencia(97, 122);
+    }
+    let str = '';
+    for(let code of generaCodiContrasenya()) {
+    str += String.fromCharCode(code);
+    }
+    document.getElementById("demo").innerHTML = (str);      // 0..9A..Za..z
+  </script>
+</body>
+</html>
