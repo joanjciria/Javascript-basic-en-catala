@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+    let str = "Joan Ciria";
+    let result = str.replace(/(?<nom>\w+) (?<cognom>\w+)/, (...match) => {
+    let groups = match.pop();
+    return `${groups.cognom}, ${groups.nom}`;
+    });
+    document.getElementById("demo").innerHTML =(result); // Ciria, Joan
+  </script>
+</body>
+</html>
