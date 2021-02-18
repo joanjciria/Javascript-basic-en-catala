@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html> 
+<body>
+  <p id="demo"></p>
+  <script>
+    var myObj, i, x = "";
+    myObj = {
+      "nom":"Joan",
+      "edat":30,
+      "cotxes": {
+      "cotxe1":"Ford",
+      "cotxe2":"BMW",
+      "cotxe3":"Audi"
+      }
+    }
+    delete myObj.cotxes.cotxe2;
+    for (i in myObj.cotxes) {
+       x += myObj.cotxes[i] + "<br>";
+    }
+    document.getElementById("demo").innerHTML = x;
+  </script>
+</body>  
+</html>
