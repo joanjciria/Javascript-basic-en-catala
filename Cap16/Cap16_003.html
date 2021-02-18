@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <p id="demo"></p>
+  <script>
+    var txt = '{"nom": "Joan", "edat": 30, "ciutat": "Palma"}'
+    var obj = JSON.parse(txt);
+    document.getElementById("demo").innerHTML = obj.nom + ", " + obj.edat;
+  </script>
+</body>
+</html>
