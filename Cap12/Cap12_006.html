@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <select id="sel1">
+    <option value="poma">Poma</option>
+    <option value="pera">Pera</option>
+    <option value="taronja">Taronja</option>
+  </select>
+  <select id="sel2">
+    <option value="poma">Poma</option>
+    <option value="pera">Pera</option>
+    <option value="taronja">Taronja</option>
+  </select>
+  <select id="sel3">
+    <option value="poma">Poma</option>
+    <option value="pera">Pera</option>
+    <option value="taronja">Taronja</option>
+  </select>
+  <script>
+    // les tres línies fan el mateix:
+    sel1.options[2].selected = true;
+    sel2.selectedIndex = 2;
+    sel3.value = 'taronja';
+    // noteu que les opcions comencen amb 0 i l'índex 2 és taronja
+  </script>
+</body>
+</html>
