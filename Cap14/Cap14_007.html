@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<html>
+<body>
+  <script>
+    let num = +prompt("Entra un nombre enter positiu?", 35)
+      let diff, result;
+      function fib(n) {
+        if (n < 0 || Math.trunc(n) != n) {
+          throw new Error("No ha de ser negatiu i també un enter.");
+        }
+        return n <= 1 ? n : fib(n - 1) + fib(n - 2);
+    }
+    let start = Date.now();
+    try {
+      result = fib(num);
+    } catch (e) {
+      result = 0;
+    } finally {
+      diff = Date.now() - start;
+    }
+    alert(result || "S'ha produit un error");
+    alert( `Executat en ${diff}ms` );
+  </script>
+</body>
+</html>
