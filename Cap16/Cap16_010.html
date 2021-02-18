@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html> 
+<body>
+  <p id="demo"></p>
+  <script>
+    var myObj = {
+      "nom":"Joan",
+      "edat":30,
+      "cotxes": {
+      "cotxe1":"Ford",
+      "cotxe2":"BMW",
+      "cotxe3":"Audi"
+      }
+    }
+    document.getElementById("demo").innerHTML += myObj.cotxes.cotxe2 + "<br>";
+    //o:
+    document.getElementById("demo").innerHTML += myObj.cotxes["cotxe2"];
+      </script>
+</body>  
+</html>
