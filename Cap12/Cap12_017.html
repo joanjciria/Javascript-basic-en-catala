@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<script>
+  function validateForm() {
+    var x = document.forms["elmeuForm"]["fnom"].value;
+    if (x == "") {
+      alert("Has d'entrar un nom.");
+      return false;
+    }
+  }
+</script>
+</head>
+<body>
+   <form name="elmeuForm" action="action.php" onsubmit="return validateForm()" method="post">
+      Nom: <input type="text" name="fnom">
+      <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
