@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> JavaScript Image Map </title>  
+<script>  
+  function show(nom) {  
+  document.meuform.cap.value = nom;  
+  }  
+</script>  
+</head>  
+<body style = "text-align: center;">  
+  <h2> Exemple de mapa d'imatge JavaScript </h2>  
+  <form name = "meuform">  
+    <input type = "text" name = "cap" size = "25px" style = "font-size: 25px; text-align: center; border: 2px solid blue; background-color: rgb(230, 230, 146);"/>  
+  </form>  
+  <br>  
+  <img src = "jslogo.jpg" border = "5" usemap = "#names" height = "250px"/>  
+  <map name = "names">  
+    <area shape = "rect" coords = "0, 0, 290, 90" href = "smiley_content.png" onclick = "show('smiley_content.png')" />  
+    <area shape = "circle" coords = "150, 140, 60" href = "smiley_trist.png" onclick = "show('smiley_trist.png')" />  
+    </map>  
+</body>  
+</html>
