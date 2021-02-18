@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+  <script>
+    let str = '<h1>Hola, món!</h1>';
+    let regexp = /<(.*?)>/g;
+    let matchAll = str.matchAll(regexp);
+    document.getElementById("demo1").innerHTML =(matchAll + "<br>");                         // [object RegExp String Iterator], un iterable
+    matchAll = Array.from(matchAll);                                                         // ara un array
+    let firstMatch = matchAll[0];
+    document.getElementById("demo2").innerHTML = ( firstMatch[1] + "<br>" ) +                 // h1
+                                                 ( firstMatch.index + "<br>" ) +              // 0
+                                                 ( firstMatch.input);  // <h1>Hola, món!</h1>
+  </script>
+</body>
+</html>
