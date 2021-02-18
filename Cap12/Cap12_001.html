@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <form name="elmeu">
+    <input name="un" value="1">
+    <input name="dos" value="2">
+  </form>
+  <p id="demo"></p>
+  <script>
+    // obté el formulari
+    let form = document.forms.elmeu; // Element <form name="elmeu"> 
+    // obté l’element
+    let elem = form.elements.un; // Element <input name="un"> 
+    document.getElementById("demo").innerHTML = ("El valor de l'element amb nom un és: " + elem.value); // 1
+  </script>
+</body>
+</html>
