@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script>
+    function* gen() {
+      // Passa una questio al codi extern i espereu una resposta
+      let resultat = yield "2 + 2 = ?"; // (*)
+      alert(resultat);
+    }
+    let generador = gen();
+    let questio = generador.next().value; // <-- yield retorna el valor
+    generador.next(4); // --> passa el resultat al generador
+  </script>
+</body>
+</html>
