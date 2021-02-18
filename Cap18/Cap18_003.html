@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script>
+    function* generaSequencia() {
+      yield 1;
+      yield 2;
+      return 3;
+    }
+    let generador = generaSequencia();
+    let un = generador.next();
+    alert(JSON.stringify(un)); // {value: 1, done: false}
+    let dos = generador.next();
+    alert(JSON.stringify(dos)); // {value: 2, done: false}
+    let tres = generador.next();
+    alert(JSON.stringify(tres)); // {value: 3, done: false}
+  </script>
+</body>
+</html
