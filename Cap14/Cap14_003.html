@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p id="demo1"></p>
+  <p id="demo2"></p>
+   <script>
+      try {
+        lalala; // error, variable no definida
+        } catch(err) {
+        document.getElementById("demo1").innerHTML = 
+        (err.name) + "<br>" + // ReferenceError
+        (err.message) + "<br>" + // lalala is not defined
+        (err.stack); // ReferenceError: lalala is not defined a (...call stack)
+        // També pot mostrar un error en el seu conjunt
+        // L'error es converteix en cadena com a "name:message"
+        document.getElementById("demo2").innerHTML =(err); 
+        }
+   </script>
+</body>
+</html>
