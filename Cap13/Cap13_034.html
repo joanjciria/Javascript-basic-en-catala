@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+    let str = "Joan Ciria";
+    // intercanviar nom i cognom
+    document.getElementById("demo").innerHTML =
+   (str.replace(/(joan) (ciria)/i, '$2, $1')) // Ciria, Joan
+  </script>
+</body>
+</html>
