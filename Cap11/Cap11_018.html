@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p>Aquest exemple utilitza el mètode addEventListener() per afegir molts
+   esdeveniments al mateix botó.</p>
+  <button id="myBtn">Try it</button>
+  <p id="demo"></p>
+  <script>
+     var x = document.getElementById("myBtn");
+     x.addEventListener("mouseover", passaFuncio);
+     x.addEventListener("click", clicFuncio);
+     x.addEventListener("mouseout", treuFuncio);
+     function passaFuncio() {
+        document.getElementById("demo").innerHTML +=
+         "Has passat el ratolí per sobre el botó!<br>";
+     }
+     function clicFuncio() {
+        document.getElementById("demo").innerHTML += "Has clicat el botó!<br>";
+     }
+    function treuFuncio() {
+           document.getElementById("demo").innerHTML += 
+       "Has tret el ratolí de sobre el botó!<br>";
+    }
+  </script>
+</body>
+</html>
