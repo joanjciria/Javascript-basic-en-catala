@@ -19,14 +19,11 @@
     </style>  
 <body>
   <input type = "button" value = "Avança 10px" onclick = "moveRight();" />
- 
   <div id ="contenidor">
   <div id="animacio"></div>
   </div>
-
   <script>
     var imgObj = null;
-    
     function init() {
         imgObj = document.getElementById('animacio');
         imgObj.style.position= 'relative'; 
@@ -34,7 +31,6 @@
     }
     var pos = 0;
     function moveRight() {
-      
       if (pos == 250) {
         imgObj.style.left = '0px';
         pos = 0;
@@ -42,11 +38,8 @@
           pos = pos++ + 10; 
           imgObj.style.left = pos + 'px'; 
         }
-       
     }
-    
     window.onload = init;
-    </script>
-
+  </script>
 </body>
 </html
