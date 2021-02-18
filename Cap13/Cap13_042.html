@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <p id="demo"></p>
+  <script>
+    let str = 'Hola, Joan!';
+    let regexp = /\w+/g; // sense el senyal "g", s'ignora la propietat lastIndex
+    regexp.lastIndex = 4; // cerca des de la quarta posició (des de la coma)
+    document.getElementById("demo").innerHTML =( regexp.exec(str) ); // Joan
+  </script>
+</body>
+</html>
